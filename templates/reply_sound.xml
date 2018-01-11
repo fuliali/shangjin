@@ -1,0 +1,15 @@
+#音频消息的模板
+
+$def with (toUser,fromUser,musicTitle,musicDes,musicURL,HQURL)
+<xml>
+<ToUserName><![CDATA[$toUser]]></ToUserName>
+<FromUserName><![CDATA[$fromUser]]></FromUserName>
+<CreateTime>12345678</CreateTime>
+<MsgType><![CDATA[music]]></MsgType>
+<Music>
+<Title><![CDATA[$musicTitle]]></Title>
+<Description><![CDATA[$musicDes]]></Description>
+<MusicUrl><![CDATA[$musicURL]]></MusicUrl>
+<HQMusicUrl><![CDATA[$HQURL]]></HQMusicUrl>
+</Music>
+</xml>
